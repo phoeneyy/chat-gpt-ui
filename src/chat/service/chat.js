@@ -74,7 +74,7 @@ export const sendChatMessage = async (question, contextMessages, onChunk, person
           }
         }
       }
-      
+      return;
     } catch (error) {
       console.error(`Attempt ${attempt} failed:`, error);
       
@@ -92,4 +92,4 @@ export const sendChatMessage = async (question, contextMessages, onChunk, person
       throw error;
     }
   }
-}; 
+};
